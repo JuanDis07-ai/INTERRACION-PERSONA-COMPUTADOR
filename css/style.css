@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  background-color: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.hero-section {
+  background-color: #D8ECFF;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-box {
+  background-color: #000;
+  border-radius: 60px;
+  padding: 40px;
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin-left: 30px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons a {
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #D8ECFF;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+  height: 60px;
+}
+
+/* Responsive para tablet/móvil */
+@media screen and (max-width: 768px) {
+  .hero-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .hero-box img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+}
